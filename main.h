@@ -2,8 +2,11 @@
 #define
 
 int _printf(const char *format, ...);
-int _putchar(char c)
-int ft_printf(const char *format, ...)
-void ft_putnbr(int n)
+
+	int _putchar(char c)
+
+void pf_putstr(char *str)
+
+void pf_putnbr(int n)
 
 #endif 
