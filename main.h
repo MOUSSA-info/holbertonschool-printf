@@ -1,15 +1,17 @@
-#ifndef PRINTF_H
-#define PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdarg.h>
 #include <unistd.h>
 
+// Prototype de la fonction principale
 int _printf(const char *format, ...);
 
-int _putchar(char c);
+// Prototypes des fonctions utilitaires
+int handle_format(const char *format, va_list args);
+int print_char(char c);
+int print_string(char *str);
+int print_percent(void);
 
-void pf_putstr(char *str);
+#endif /* MAIN_H */
 
-void pf_putnbr(int n);
-
-#endif 
