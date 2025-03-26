@@ -17,7 +17,7 @@ int print_char(char c)
  * Return: Nombre de caractères à affichés
  */
 
-int print_string(char *str)
+int _print_string(char *str)
 {
 	int i = 0;
 
