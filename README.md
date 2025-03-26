@@ -1,7 +1,7 @@
 Readme-Printf
 
 <<<<<<< HEAD
-_printf
+# _printf
 
 DESCRIPTION.:
 The _printf function mimics a subset of the standard C library’s printf, focusing on core formatting for characters, strings, and percentage literals. It writes output to stdout and returns the count of printed characters (excluding the null byte). Below are key implementation details.
@@ -9,7 +9,7 @@ The _printf function mimics a subset of the standard C library’s printf, focus
 
 
 
-Files
+# Files
 main.h: Header file with function prototype.
 
 _printf.c: Core implementation using va_list argument handling.
@@ -44,7 +44,7 @@ holbertonschool-printf/
 
 # This project is a custom implementation of printf in C.
 
-📌 Features
+# 📌 Features
 
 c: Displays a character
 
@@ -53,8 +53,14 @@ s: Displays a string
 %: Displays a percentage (%%)
 
 
-🚀 Compilation
+# 🚀 Compilation
 
 >>>>>>> gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
+
+# Author
+
+# Mahamat Abdallah MOUSSA
+# PATRICE Bolin
+# CISSE AHMED
