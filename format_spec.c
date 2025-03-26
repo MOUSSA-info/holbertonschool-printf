@@ -10,25 +10,25 @@
 
 int handle_format(const char *format, va_list args)
 {
-	int i = 0; printed_chars = 0;
+	int i = 0, printed_chars = 0;
 
 	while (format[i])
 	{
-		if (format[i] == %)
+		if (format[i] == '%')
 		{
 			i++;
 
 			if (format[i] == 'c')
-				printed_chars += print_char(va_arg(args, int));
+				printed_chars += _putchar(va_arg(args, int));
 			else if (format[i] == 's')
-				printed_chars += print_string(va_arg(args, char *));
+				printed_chars += _print_string(va_arg(args, char *));
 			else if (format[i] == '%')
 				printed_chars += print_percent();
 			else
-				printed_chars += print_char(format[i]);
+				printed_chars += _putchar(format[i]);
 		}
 		else
-			printed_chars += print_char(format[i]);
+			printed_chars += _putchar(format[i]);
 		i++;
 	}
 
