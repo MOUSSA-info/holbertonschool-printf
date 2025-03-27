@@ -24,12 +24,12 @@ int _printf(const char *format, ...)
 			if (format[i] == '\0')
 				return (-1);
 			if (format[i] == 'c')
-				count += _putchar(va_arg(args,int));
+				count += _putchar(va_arg(args, int));
 			else if (format[i] == 's')
 				count += _print_string(va_arg(args, char *));
 			else if (format[i] == '%')
 				count += _putchar('%');
-			else if (format[i] =='d' || format [i] =='i')
+			else if (format[i] == 'd' || format[i] == 'i')
 				count += print_number(va_arg(args, int));
 			else
 				count += _putchar('%') + _putchar(format[i]);
