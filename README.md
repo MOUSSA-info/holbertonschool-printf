@@ -1,6 +1,5 @@
 Readme-Printf
 
-<<<<<<< HEAD
 # _printf
 
 DESCRIPTION.:
