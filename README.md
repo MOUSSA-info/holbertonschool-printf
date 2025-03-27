@@ -2,7 +2,7 @@ Readme-Printf
 
 # _printf
 
-DESCRIPTION.:
+# DESCRIPTION.:
 The _printf function mimics a subset of the standard C library’s printf, focusing on core formatting for characters, strings, and percentage literals. It writes output to stdout and returns the count of printed characters (excluding the null byte). Below are key implementation details.
 
 
