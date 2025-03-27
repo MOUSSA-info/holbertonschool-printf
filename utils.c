@@ -12,7 +12,7 @@ int _putchar(char c)
 }
 
 /**
- * print_string - Affiche une chaine de caractère
+ * _print_string - Affiche une chaine de caractère
  * @str: chaine à afficher
  * Return: Nombre de caractères à affichés
  */
@@ -27,6 +27,33 @@ int _print_string(char *str)
 		_putchar(str[i++]);
 
 	return (i);
+}
+
+/**
+ * print_number - Affiche un entier
+ * @n: L'entier à afficher
+ * Return: Le nombre de caractère affichés
+ */
+
+int print_number(int n)
+{
+	int count = 0;
+	unsigned int num;
+
+	if (n < 0)
+	{
+		count += _putchar('-');
+		num = -n;
+	}
+	else
+	{
+		num = n;
+	}
+
+	if (num / 10)
+		count += print_number(num / 10);
+	count += _putchar((num % 10) + '0');
+	return (count);
 }
 
 /**
