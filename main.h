@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+
 /* Prototype de la fonction principale*/
 int _printf(const char *format, ...);
 
