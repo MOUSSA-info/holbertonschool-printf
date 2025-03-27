@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_char - Affiche un caractère
+ * _putchar - Affiche un caractère
  * @c: Caractère à afficher
  * Return: 1 nombre de caractères affichés
  */
 
-int print_char(char c)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
