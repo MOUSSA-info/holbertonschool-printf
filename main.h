@@ -8,7 +8,6 @@
 int _printf(const char *format, ...);
 
 /* Prototypes des fonctions utilitaires*/
-int handle_format(const char *format, va_list args);
 int _putchar(char c);
 int _print_string(char *str);
 int print_percent(void);
