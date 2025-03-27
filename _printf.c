@@ -8,16 +8,14 @@
 
 int _printf(const char *format, ...)
 {
-va_list args;
-int count = 0;
-int i = 0;
+	va_list args;
+	int count = 0;int i = 0;
 
-if (!format)
-return (-1);
+	if (!format)
+	return (-1);
 
-va_start(args, format);
+	va_start(args, format);
 
-<<<<<<< HEAD
 	while (format[i])
 	{
 		if (format[i] == '%')
@@ -30,12 +28,17 @@ va_start(args, format);
 			else if (format[i] == '%')
 				count += _putchar('%');
 			else if (format[i] == 'd' || format[i] == 'i')
+			{
+				if (format[i + 1] != '\0' && format[i + 1] != '%')
+			{
 				count += print_number(va_arg(args, int));
-			else if (format[i])
+			}
+			else
 			{
 				count += _putchar('%');
 				count += _putchar(format[i]);
 			}
+			}	
 			else
 				return (-1);
 		}
@@ -45,41 +48,4 @@ va_start(args, format);
 	}
 	va_end(args);
 	return (count);
-=======
-while (format[i])
-{
-if (format[i] == '%')
-{
-i++;
-if (format[i] == 'c')
-count += _putchar(va_arg(args, int));
-else if (format[i] == 's')
-count += _print_string(va_arg(args, char *));
-else if (format[i] == '%')
-count += _putchar('%');
-else if (format[i])
-{
-count += _putchar('%');
-count += _putchar(format[i]);
-}
-else
-return (-1);
-}
-else
-count += _putchar(format[i]);
-}
-else
-{
-return (-1);
-}
-}
-else
-{
-count += _putchar(format[i]);
-}
-i++;
-}
-va_end(args);
-return (count);
->>>>>>> refs/remotes/origin/main
 }
