@@ -24,7 +24,7 @@ int _print_string(char *str)
 	if (!str)
 		str = "(null)";
 	while (str[i])
-		print_char(str[i++]);
+		_putchar(str[i++]);
 
 	return (i);
 }
@@ -36,5 +36,5 @@ int _print_string(char *str)
 
 int print_percent(void)
 {
-	return (print_char('%'));
+	return (_putchar('%'));
 }
