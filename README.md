@@ -22,7 +22,7 @@ _putchar ; Handle function writes a single character to the standard output and 
 
 This README provides essential implementation details, usage examples, and clear boundaries of functionality. The structure mirrors common C project documentation while adhering to the specified requirements.
 
-![Texte alternatif](https://github.com/MOUSSA-info/holbertonschool-printf/blob/9035192c46acafdd2e07c4ea73f132dbbc4e65d3/Image%2028-03-2025%20a%CC%80%2011.23.JPG)
+![Texte alternatif](https://github.com/MOUSSA-info/holbertonschool-printf/blob/fdbd10131ff84bfa5f6bbfedc17cf941ea6dc94b/Capture%20d%E2%80%99e%CC%81cran%202025-03-28%20a%CC%80%2011.58.59.png)
 
 # holbertonschool-printf
 │── main.h          # Header file (prototypes and includes),
