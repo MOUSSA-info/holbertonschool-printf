@@ -1,4 +1,4 @@
-Readme-Printf
+# Readme-Printf
 
 # _printf
 
@@ -24,7 +24,7 @@ This README provides essential implementation details, usage examples, and clear
 
 ![Texte alternatif](https://github.com/MOUSSA-info/holbertonschool-printf/blob/9035192c46acafdd2e07c4ea73f132dbbc4e65d3/Image%2028-03-2025%20a%CC%80%2011.23.JPG)
 
-holbertonschool-printf
+# holbertonschool-printf
 │── main.h          # Header file (prototypes and includes),
 │── _printf.c       # Main _printf function,
 │── format_spec.c   # Handling of specifiers (%c, %s, %d, etc.),
@@ -48,7 +48,7 @@ s: Displays a string
 
 # 🚀 Compilation
 
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+# gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
 
 
