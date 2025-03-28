@@ -11,14 +11,21 @@ The _printf function mimics a subset of the standard C library’s printf, focus
 # Files
 main.h: Header file with function prototype.
 
-_printf.c: Core implementation using va_list argument handling.
 
-print_char.c: Handles %c specifier.
+# tests
+main.c
+main_test.c
 
-print_string.c: Handles %s specifier.
+Makefile
+README.md
+_printf.c
+main.c
+main.h
+man_3_printf.1
+utils.c
 
-puts.c : Handle these functions  %c %s %% specifier.
-_putchar ; Handle function writes a single character to the standard output and returns the character's ASCII value or EOF in case of an error.
+
+
 
 This README provides essential implementation details, usage examples, and clear boundaries of functionality. The structure mirrors common C project documentation while adhering to the specified requirements.
 
